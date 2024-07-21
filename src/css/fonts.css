@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'TBCX';
+  src: url('../fonts/TBCXRegular.eot');
+  src: url('../fonts/TBCXRegular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/TBCXRegular.woff2') format('woff2'),
+      url('../fonts/TBCXRegular.woff') format('woff'),
+      url('../fonts/TBCXRegular.ttf') format('truetype'),
+      url('../fonts/TBCXRegular.svg#TBCXRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TBCX';
+  src: url('../fonts/TBCXMedium.eot');
+  src: url('../fonts/TBCXMedium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/TBCXMedium.woff2') format('woff2'),
+      url('../fonts/TBCXMedium.woff') format('woff'),
+      url('../fonts/TBCXMedium.ttf') format('truetype'),
+      url('../fonts/TBCXMedium.svg#TBCXMedium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TBCX';
+  src: url('../fonts/TBCXBold.eot');
+  src: url('../fonts/TBCXBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/TBCXBold.woff2') format('woff2'),
+      url('../fonts/TBCXBold.woff') format('woff'),
+      url('../fonts/TBCXBold.ttf') format('truetype'),
+      url('../fonts/TBCXBold.svg#TBCXBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
