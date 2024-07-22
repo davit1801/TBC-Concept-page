@@ -3,3 +3,167 @@
     font-size: 1.4rem;
   }
 }
+
+@media (max-width: 768px) {
+  .header-desktop-logo {
+    display: none;
+  }
+
+  .header-mob-logo {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .page-padding {
+    padding: 0 4.5rem;
+  }
+
+  .header-dropdown-bg {
+    display: none;
+  }
+
+  .header-navigation {
+    display: none;
+  }
+
+  .change-lang {
+    display: none;
+  }
+
+  .mob-header-btn {
+    display: flex;
+  }
+
+  .header-mob-navigation {
+    background-color: #f9fafa;
+    z-index: 102;
+    display: block;
+    padding-top: 8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .header-mob-navigation-wrapper {
+    max-height: 100%;
+    overflow: auto;
+  }
+
+  .header-mob-main {
+    background-color: #fff;
+  }
+
+  .mob-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mob-nav-item {
+    border-bottom: 1px solid #d1d5d6;
+    padding: 3.2rem 4.5rem;
+  }
+
+  .mob-nav-item-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #141719;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .mob-nav-hidden-links {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    font-size: 1.6rem;
+  }
+
+  .mob-nav-hidden-content {
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 1s ease;
+  }
+
+  .show-nav .mob-nav-hidden-content {
+    grid-template-rows: 1fr;
+  }
+
+  .mob-nav-item-name svg {
+    transition: transform 0.6s ease;
+  }
+
+  .show-nav .mob-nav-item-name svg {
+    transform: rotate(180deg);
+  }
+
+  .header-contacts {
+    padding: 3.2rem 4.5rem;
+  }
+
+  .header-nav-heading {
+    font-size: 2.4rem;
+    color: #141719;
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin: 3.2rem 0;
+  }
+
+  .contact-list-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+  }
+
+  .soc-icons {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .soc-icons a {
+    width: 5.2rem;
+    height: 5.2rem;
+    background-color: #f9fafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+  }
+
+  .soc-icons a img {
+    width: 1.7rem;
+  }
+
+  .header-mob-bottom {
+    background-color: #f9fafa;
+    padding: 3.2rem 4.5rem;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .terms-rules {
+    gap: 3rem;
+  }
+
+  .copyright {
+    color: #6f787b;
+    display: flex;
+    gap: 8px;
+  }
+
+  .copyright img {
+    width: 2rem;
+  }
+}
