@@ -28,21 +28,3 @@ function checkShowList() {
   );
 }
 
-
-//Header Mobile Navigation
-const mobNavItems = document.querySelectorAll('.mob-nav-item');
-mobNavItems.forEach((item) => {
-  item.addEventListener('click', () => {
-    item.classList.toggle('show-nav');
-    mobNavItems.forEach((otherItem) => {
-      if (otherItem !== item) {
-        otherItem.classList.remove('show-nav');
-      }
-    });
-  });
-});
-
-const headerButton = document.querySelector('.mob-header-btn');
-headerButton.addEventListener('click', () => {
-  header.classList.toggle('open-mob-nav');
-});

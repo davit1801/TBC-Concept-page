@@ -4,17 +4,25 @@
   }
 }
 
-@media (max-width: 768px) {
-  .header-desktop-logo {
-    display: none;
+@media (max-width: 1122px) {
+  .header-container {
+    gap: 2rem;
   }
 
-  .header-mob-logo {
-    display: block;
+  .header-navigation {
+    margin: 0;
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
+  section {
+    padding: 5rem 0;
+  }
+
+  .header {
+    padding: 0 4.5rem;
+  }
+
   .page-padding {
     padding: 0 4.5rem;
   }
@@ -39,12 +47,20 @@
     background-color: #f9fafa;
     z-index: 102;
     display: block;
+    visibility: hidden;
+    opacity: 0;
     padding-top: 8rem;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    transition: opacity 0.25s ease;
+  }
+
+  .open-mob-nav .header-mob-navigation {
+    visibility: visible;
+    opacity: 1;
   }
 
   .header-mob-navigation-wrapper {
@@ -118,32 +134,6 @@
     margin: 3.2rem 0;
   }
 
-  .contact-list-item {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-weight: 500;
-  }
-
-  .soc-icons {
-    display: flex;
-    gap: 1.5rem;
-  }
-
-  .soc-icons a {
-    width: 5.2rem;
-    height: 5.2rem;
-    background-color: #f9fafa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-  }
-
-  .soc-icons a img {
-    width: 1.7rem;
-  }
-
   .header-mob-bottom {
     background-color: #f9fafa;
     padding: 3.2rem 4.5rem;
@@ -153,17 +143,88 @@
     gap: 3.2rem;
   }
 
+  .copyright {
+    color: #6f787b;
+  }
+
+  .statistic {
+    flex-direction: column;
+  }
+
+  .get-app-wrapper {
+    min-height: 30rem;
+  }
+
+  .app-btn {
+    display: none;
+  }
+
+  .app-mob-btn {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 0;
+  }
+  .header-desktop-logo {
+    display: none;
+  }
+
+  .header-mob-logo {
+    display: block;
+  }
+
+  .soc-icons a {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
+  .message-text {
+    font-size: 2.8rem;
+  }
+
+  .get-app-wrapper {
+    flex-direction: column;
+    width: 100%;
+    gap: 2.8rem;
+  }
+
   .terms-rules {
     gap: 3rem;
   }
+}
 
-  .copyright {
-    color: #6f787b;
-    display: flex;
-    gap: 8px;
+@media (max-width: 479px) {
+  section {
+    padding: 3.6rem 0;
+  }
+  .page-padding {
+    padding: 0 1.5rem;
+  }
+  .header {
+    padding: 0 1.5rem;
   }
 
-  .copyright img {
-    width: 2rem;
+  .header-buttons {
+    gap: 0.8rem;
+  }
+
+  .arrow-link {
+    font-size: 1.2rem;
+  }
+
+  .message-text {
+    font-size: 2.4rem;
+  }
+
+  .statistic {
+    gap: 1.6rem;
+  }
+
+  .statistic-item {
+    padding: 2.4rem;
+    font-size: 1.4rem;
   }
 }
