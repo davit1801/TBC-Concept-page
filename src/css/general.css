@@ -25,6 +25,10 @@ body {
   color: #555f62;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 img {
   max-inline-size: 100%;
 }
@@ -39,10 +43,6 @@ a {
 ol,
 ul {
   list-style: none;
-}
-
-main {
-  padding-top: 8rem;
 }
 
 section {
@@ -62,6 +62,40 @@ img {
   padding: 0 4.7rem;
 }
 
+.site-wrapper {
+  padding-top: 8rem;
+}
+
+.scroll-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.scroll-content {
+}
+
+.scrollbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(222, 222, 222, 0.75);
+  transition: opacity 0.5s 0.5s ease-out;
+}
+
+.scroll-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 8px;
+  height: 52.7538px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .heading-primary,
 .secondary-heading,
 .heading-tertiary {
@@ -74,14 +108,7 @@ img {
 .secondary-heading {
   line-height: 1.5;
   color: #141719;
-}
-
-.grid-col-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-auto-columns: 1fr;
-  gap: 3rem;
+  margin-bottom: 3.6rem;
 }
 
 .search-btn:hover {
@@ -101,6 +128,23 @@ img {
 
 .arrow-link:hover {
   color: #3295ce;
+}
+
+.white-arrow-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4;
+  transition: color 0.25s ease-in-out;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.white-arrow-link:hover {
+  text-decoration: none;
+  color: #aeaeae;
 }
 
 .overflow-hidden {
@@ -125,7 +169,7 @@ img {
 
 .soc-icons {
   display: flex;
-  gap: 1.5rem;
+  gap: 4px;
 }
 
 .soc-icons a {
@@ -153,11 +197,8 @@ img {
   color: #6f787b;
   color: #555f62;
   display: flex;
+  align-items: center;
   gap: 8px;
-}
-
-.copyright img {
-  width: 2rem;
 }
 
 .terms-rules {
