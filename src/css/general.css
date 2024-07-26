@@ -72,8 +72,8 @@ img {
   overflow: hidden;
 }
 
-.scroll-content {
-}
+/* .scroll-content {
+} */
 
 .scrollbar {
   position: absolute;
@@ -108,6 +108,9 @@ img {
 .secondary-heading {
   line-height: 1.5;
   color: #141719;
+}
+
+.heading-wrapper {
   margin-bottom: 3.6rem;
 }
 
@@ -149,6 +152,23 @@ img {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.swiper_scrollbar {
+  height: 2px;
+  background-color: #d1d5d6;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #182cc0;
 }
 
 .contact-icon {

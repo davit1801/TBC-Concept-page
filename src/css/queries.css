@@ -197,7 +197,7 @@
     padding: 4rem 0;
   }
 
-  .secondary-heading {
+  .heading-wrapper {
     margin-bottom: 2.8rem;
   }
 
@@ -261,6 +261,45 @@
     flex-direction: column;
     width: 100%;
     gap: 2.8rem;
+  }
+
+  .swiper-wrapper{
+    padding-bottom: 2.8rem;
+  }
+
+  .offers-card {
+    border-radius: 6px;
+  }
+
+  .offers-card-img-wrapper {
+    padding-top: 42%;
+
+  }
+
+  .offers-card-img {
+    border-radius: 6px 6px 0 0;
+  }
+
+  .offers-card-content {
+    padding: 2rem;
+    gap: 1.2rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .award-card{
+    border-style: none;
+    border-radius: 6px;
+  }
+
+  .award-content {
+    gap: 1.6rem;
+  }
+
+  .award-content h3 {
+    font-size: 1.4rem;
   }
 
   .footer {
@@ -384,7 +423,7 @@
     padding: 3.6rem 0;
   }
 
-  .secondary-heading {
+  .heading-wrapper {
     margin-bottom: 2rem;
   }
 
@@ -452,6 +491,14 @@
   .statistic-item {
     padding: 2.4rem;
     font-size: 1.4rem;
+  }
+
+  .swiper-wrapper{
+    padding-bottom: 2rem;
+  }
+
+  .offers-card-img-wrapper {
+    padding-top: 57%;
   }
 
   .footer-dropdown-toggle {
