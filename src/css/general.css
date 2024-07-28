@@ -25,9 +25,9 @@ body {
   color: #555f62;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar{
   display: none;
-}
+} */
 
 img {
   max-inline-size: 100%;
@@ -66,36 +66,6 @@ img {
   padding-top: 8rem;
 }
 
-.scroll-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-/* .scroll-content {
-} */
-
-.scrollbar {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 8px;
-  height: 100%;
-  z-index: 1;
-  background-color: rgba(222, 222, 222, 0.75);
-  transition: opacity 0.5s 0.5s ease-out;
-}
-
-.scroll-thumb {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  width: 8px;
-  height: 52.7538px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .heading-primary,
 .secondary-heading,
 .heading-tertiary {
@@ -112,6 +82,9 @@ img {
 
 .heading-wrapper {
   margin-bottom: 3.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .search-btn:hover {
@@ -154,6 +127,26 @@ img {
   overflow: hidden;
 }
 
+.swiper-container {
+  position: relative;
+  z-index: 1;
+}
+
+.swiper-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-bottom: 3.8rem;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  margin-right: 3rem;
+  position: relative;
+}
+
 .swiper_scrollbar {
   height: 2px;
   background-color: #d1d5d6;
@@ -169,6 +162,32 @@ img {
   width: 100%;
   position: relative;
   background-color: #182cc0;
+}
+
+.swiper-nav-arrows {
+  display: none;
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -11px;
+}
+
+.swipper-nav-arrow {
+  cursor: pointer;
+  color: #182cc0;
+  transition: color 0.25s ease-in-out;
+}
+
+.swipper-nav-arrow:hover {
+  color: #555f62;
+}
+
+.swipper-nav-arrow:focus {
+  outline: none;
+}
+
+.swipper-nav-arrow.swiper-button-disabled {
+  color: #a5aaac;
 }
 
 .contact-icon {
@@ -281,4 +300,84 @@ img {
   transform: translateZ(0) scaleX(1) rotateX(0deg) rotateY(0deg) rotate(45deg)
     skew(0deg, 0deg);
   width: 2rem;
+}
+
+.menu-button {
+  position: fixed;
+  right: 3.2rem;
+  bottom: 3.2rem;
+}
+
+.menu-trigger-btn {
+  width: 5.6rem;
+  height: 5.6rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+  transition: background-color 0.25s ease-in-out;
+  color: #fff;
+  cursor: pointer;
+  background-color: #424a4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-trigger-btn:hover {
+  background-color: #424a4dcc;
+}
+
+.menu-btn-icons {
+  position: relative;
+}
+
+.icon-dots,
+.icon-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-close {
+  display: none;
+}
+
+.menu-button.active .icon-close {
+  display: block;
+}
+
+.menu-button.active .icon-dots {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.buttons-item {
+  cursor: pointer;
+  width: 5.6rem;
+  height: 5.6rem;
+  background-color: #fff;
+  border: 1px solid #eef1f1;
+  border-radius: 50%;
+  padding: 1.6rem;
+  transition: background-color 0.25s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-item:hover {
+  background-color: #3295ce;
+  color: #fff;
+}
+
+.menu-buttons-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

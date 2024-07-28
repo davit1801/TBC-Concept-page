@@ -70,137 +70,176 @@ footerDropdownToggles.forEach((item) => {
   });
 });
 
-// const wrapper = document.querySelector('.swipper-container');
-
-// let pressed = false;
-// let startX = 0;
-
-// wrapper.addEventListener('mousedown', (e) => {
-//   pressed = true;
-//   startX = e.clientX;
-//   wrapper.style.cursor = 'grabbing';
-
-//   console.log(startX);
-// });
-
-// wrapper.addEventListener('mouseleave', (e) => {
-//   pressed = false;
-// });
-
-// window.addEventListener('mouseup', (e) => {
-//   pressed = false;
-//   wrapper.style.cursor = 'grab';
-// });
-
-// wrapper.addEventListener('mousemove', (e) => {
-//   if (!pressed) {
-//     return;
-//   }
-//   // wrapper.scrollLeft += startX - e.clientX
-//   wrapper.style.transform = 'translate3d(-100px, 0px, 0px)';
-// });
-
-// const slider = document.querySelector('.awards-swipper');
-// const buttonTest = document.querySelector('.test1');
-
-// slider.addEventListener('mousedown', (e) => {
-//   slider.addEventListener('mousemove', (e) => {
-//     console.log(e.clientX);
-//   });
-//   // slider.style.transform = `translate(-${e.clientX}px, 0px)`;
+/////////////////////////////////////////////
+// const menuButton = document.querySelector('.menu-button');
+// menuButton.addEventListener('click', () => {
+//   menuButton.classList.toggle('active');
 // });
 
 //////////////////
-const awardsSwipper = new Swiper('.awards-swipper', {
-  spaceBetween: 30,
-  slidesPerView: 3,
-  speed: 800,
-  grabCursor: !0,
-  updateOnWindowResize: !0,
-  watchOverflow: !0,
-  scrollbar: {
-    el: '.awards-slider-scrollbar',
-    draggable: !0,
-    hide: !1,
-    dragSize: 300,
-    snapOnRelease: !1,
-  },
-  navigation: {
-    nextEl: '.main-slider-next',
-    prevEl: '.main-slider-prev',
-  },
-  breakpoints: {
-    0: {
-      spaceBetween: 15,
-      slidesPerView: 1.213,
-      scrollbar: {
-        dragSize: 137,
-      },
-    },
-    600: {
-      spaceBetween: 15,
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 2.523,
-      spaceBetween: 30,
-      scrollbar: {
-        dragSize: 300,
-      },
-    },
-    1440: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      scrollbar: {
-        dragSize: 300,
-      },
-    },
-  },
-});
+// Swipper
 
-const offersSwipper = new Swiper('.offers-swipper', {
-  spaceBetween: 30,
-  slidesPerView: 3,
-  speed: 800,
-  grabCursor: !0,
-  updateOnWindowResize: !0,
-  watchOverflow: !0,
-  scrollbar: {
-    el: '.offers-slider-scrollbar',
-    draggable: !0,
-    hide: !1,
-    dragSize: 300,
-    snapOnRelease: !1,
-  },
-  navigation: {
-    nextEl: '.main-slider-next',
-    prevEl: '.main-slider-prev',
-  },
-  breakpoints: {
-    0: {
-      spaceBetween: 15,
-      slidesPerView: 1.213,
-      scrollbar: {
-        dragSize: 137,
+function swiperSlider(sliderName, scrollbar, nextEl, prevEl) {
+  new Swiper(`.${sliderName}`, {
+    spaceBetween: 30,
+    slidesPerView: 3,
+    speed: 800,
+    grabCursor: !0,
+    updateOnWindowResize: !0,
+    watchOverflow: !0,
+    scrollbar: {
+      el: `.${scrollbar}`,
+      draggable: !0,
+      hide: !1,
+      dragSize: 300,
+      snapOnRelease: !1,
+    },
+    navigation: {
+      nextEl: `.${nextEl}`,
+      prevEl: `.${prevEl}`,
+    },
+    breakpoints: {
+      0: {
+        spaceBetween: 15,
+        slidesPerView: 1.213,
+        scrollbar: {
+          dragSize: 137,
+        },
+      },
+      600: {
+        spaceBetween: 15,
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 2.523,
+        spaceBetween: 30,
+        scrollbar: {
+          dragSize: 300,
+        },
+      },
+      1440: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        scrollbar: {
+          dragSize: 300,
+        },
       },
     },
-    600: {
-      spaceBetween: 15,
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 2.523,
-      spaceBetween: 30,
-      scrollbar: {
-        dragSize: 300,
-      },
-    },
-    1440: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      scrollbar: {
-        dragSize: 300,
-      },
-    },
-  },
-});
+  });
+}
+
+
+//   spaceBetween: 30,
+//   slidesPerView: 3,
+//   speed: 800,
+//   grabCursor: !0,
+//   updateOnWindowResize: !0,
+//   watchOverflow: !0,
+//   scrollbar: {
+//     el: '.awards-slider-scrollbar',
+//     draggable: !0,
+//     hide: !1,
+//     dragSize: 300,
+//     snapOnRelease: !1,
+//   },
+//   navigation: {
+//     nextEl: '.awards-slider-next',
+//     prevEl: '.awards-slider-prev',
+//   },
+//   breakpoints: {
+//     0: {
+//       spaceBetween: 15,
+//       slidesPerView: 1.213,
+//       scrollbar: {
+//         dragSize: 137,
+//       },
+//     },
+//     600: {
+//       spaceBetween: 15,
+//       slidesPerView: 2,
+//     },
+//     1024: {
+//       slidesPerView: 2.523,
+//       spaceBetween: 30,
+//       scrollbar: {
+//         dragSize: 300,
+//       },
+//     },
+//     1440: {
+//       slidesPerView: 3,
+//       spaceBetween: 30,
+//       scrollbar: {
+//         dragSize: 300,
+//       },
+//     },
+//   },
+// });
+
+swiperSlider(
+  'awards-swiper',
+  'awards-slider-scrollbar',
+  'awards-slider-next',
+  'awards-slider-prev'
+);
+swiperSlider(
+  'offers-swiper',
+  'offers-slider-scrollbar',
+  'offers-slider-next',
+  'offers-slider-prev'
+);
+swiperSlider(
+  'products-swiper',
+  'products-slider-scrollbar',
+  'products-slider-next',
+  'products-slider-prev'
+);
+
+
+
+// const productsSwiper = new Swiper('.products-swiper', {
+//   spaceBetween: 30,
+//   slidesPerView: 3,
+//   speed: 800,
+//   grabCursor: !0,
+//   updateOnWindowResize: !0,
+//   watchOverflow: !0,
+//   scrollbar: {
+//     el: '.products-slider-scrollbar',
+//     draggable: !0,
+//     hide: !1,
+//     dragSize: 300,
+//     snapOnRelease: !1,
+//   },
+//   navigation: {
+//     nextEl: '.products-slider-next',
+//     prevEl: '.products-slider-prev',
+//   },
+//   breakpoints: {
+//     0: {
+//       spaceBetween: 15,
+//       slidesPerView: 1.213,
+//       scrollbar: {
+//         dragSize: 137,
+//       },
+//     },
+//     600: {
+//       spaceBetween: 15,
+//       slidesPerView: 2,
+//     },
+//     1024: {
+//       slidesPerView: 2.523,
+//       spaceBetween: 30,
+//       scrollbar: {
+//         dragSize: 300,
+//       },
+//     },
+//     1440: {
+//       slidesPerView: 3,
+//       spaceBetween: 30,
+//       scrollbar: {
+//         dragSize: 300,
+//       },
+//     },
+//   },
+// });
+

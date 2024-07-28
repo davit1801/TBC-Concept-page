@@ -1,6 +1,45 @@
-@media (max-width: 1440px) {
+@media (min-width: 1440px) {
   body {
+    font-size: 1.6rem;
+  }
+
+  .header-dropdown-link:link,
+  .header-dropdown-link:visited {
     font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .message-text {
+    font-size: 3.6rem;
+  }
+
+  .banner-content {
+    padding: 9.5rem;
+  }
+
+  .banner-inner {
+    max-width: 54rem;
+  }
+
+  .banner-heading {
+    font-size: 2.8rem;
+  }
+
+  .swiper-container {
+    overflow: hidden;
+  }
+
+  .swiper_scrollbar {
+    margin-right: 9.2rem;
+  }
+
+  .swiper-nav-arrows {
+    display: flex;
+  }
+
+  .menu-button {
+    bottom: 4rem;
+    right: 4rem;
   }
 }
 
@@ -257,13 +296,13 @@
     border-radius: 0;
   }
 
-  .get-app-wrapper {
+  .get-app-inner {
     flex-direction: column;
     width: 100%;
     gap: 2.8rem;
   }
 
-  .swiper-wrapper{
+  .swiper-wrapper {
     padding-bottom: 2.8rem;
   }
 
@@ -273,7 +312,6 @@
 
   .offers-card-img-wrapper {
     padding-top: 42%;
-
   }
 
   .offers-card-img {
@@ -289,7 +327,7 @@
     font-size: 1.2rem;
   }
 
-  .award-card{
+  .award-card {
     border-style: none;
     border-radius: 6px;
   }
@@ -300,6 +338,21 @@
 
   .award-content h3 {
     font-size: 1.4rem;
+  }
+
+  .product-card {
+    border-radius: 6px;
+    font-size: 1.2rem;
+  }
+
+  .product-card-img-wrapper {
+    border-radius: 6px 6px 0 0;
+    padding-top: 42%;
+  }
+
+  .product-card-content {
+    padding: 2rem;
+    gap: 1.2rem ;
   }
 
   .footer {
@@ -476,7 +529,7 @@
     margin: 0 -1.5rem;
   }
 
-  .banner-inner > h1 {
+  .banner-heading {
     font-size: 1.6rem;
   }
 
@@ -493,25 +546,33 @@
     font-size: 1.4rem;
   }
 
-  .swiper-wrapper{
+  .swiper-wrapper {
     padding-bottom: 2rem;
   }
 
-  .offers-card-img-wrapper {
+  .offers-card-img-wrapper,
+  .product-card-img-wrapper {
     padding-top: 57%;
   }
 
+
   .footer-dropdown-toggle {
-    padding-top: 2.4rem;
+    padding:  2.4rem 1.5rem;
     padding-bottom: 2.4rem;
+    margin: 0 -1.5rem;
   }
 
   .footer-top {
     padding: 3.2rem 0;
+    /* margin: 0 -1.5rem; */
   }
 
   .footer-bottom {
     padding: 2.4rem 0;
+  }
+
+  .footer-bottom-inner {
+    font-size: 1.2rem;
   }
 
   .footer-contacts {

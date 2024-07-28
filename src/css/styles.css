@@ -231,6 +231,7 @@
 /* Section Hero */
 .section-hero {
   padding: 3.2rem 0 6rem;
+  overflow: hidden;
 }
 
 .banner {
@@ -284,7 +285,7 @@
   height: 100%;
 }
 
-.banner-inner > h1 {
+.banner-heading {
   margin-bottom: 1.6rem;
   font-size: 2.4rem;
   line-height: 1.5;
@@ -344,6 +345,10 @@
 
 /* --------------------------------------------------*/
 /* Section Set */
+
+.section-sets {
+  overflow: auto;
+}
 
 .sets-cards {
   display: grid;
@@ -427,6 +432,10 @@
 
 /* --------------------------------------------------*/
 /* Section Offers */
+.section-offers {
+  overflow: hidden;
+}
+
 .offers-card {
   font-size: 1.4rem;
   border: 1px solid #e1e4e5;
@@ -449,19 +458,6 @@
 .offers-card-img-wrapper {
   position: relative;
   padding-top: 60%;
-}
-
-.offers-card-img {
-  width: 100%;
-  height: 102%;
-  object-fit: cover;
-  border-radius: 8px 8px 0 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  transition: all .25s ease-in-out;
 }
 
 .offers-card-logo {
@@ -505,11 +501,13 @@
 
 /* --------------------------------------------------*/
 /* Section Get-app */
-.section-get-app {
+
+.get-app-wrapper {
+
   background-color: #fff;
 }
 
-.get-app-wrapper {
+.get-app-inner {
   display: flex;
   min-height: 37.4rem;
   justify-content: space-between;
@@ -576,31 +574,55 @@
 }
 
 /* --------------------------------------------------*/
-/* Section Awards */
-
-.swipper-container,
-.swiper-container {
-  overflow: visible;
-  cursor: grab;
-  position: relative;
-  z-index: 1;
+/* Section Product */
+.section-products {
+  overflow: hidden;
 }
-
-.awards-swipper,
-.swiper-wrapper {
-  display: flex;
+.product-card {
   height: 100%;
-  width: 100%;
-  position: relative;
-  z-index: 1;
-  padding-bottom: 3.8rem;
+  border: 1px solid #e1e4e5;
+  border-radius: 8px;
+  display: flex;
+  font-size: 1.4rem;
+  flex-direction: column;
+  transition: box-shadow 0.4s ease-in-out, background-color 0.4s ease-in-out;
 }
 
-.awards-slide,
-.swiper-slide {
-  flex-shrink: 0;
-  margin-right: 3rem;
+.product-card:hover {
+  box-shadow: 0 36px 40px -15px rgba(12, 43, 67, 0.07);
+  background-color: #fff;
+}
+
+.product-card-img-wrapper {
+  border-radius: 8px 8px 0 0;
   position: relative;
+  padding-top: 60%;
+  overflow: hidden;
+}
+
+.product-card:hover .product-card-img {
+  top: -2%;
+}
+
+.product-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 2.8rem;
+  align-items: flex-start;
+}
+
+.card-description {
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+/* --------------------------------------------------*/
+/* Section Awards */
+.section-awards {
+  overflow: hidden;
 }
 
 .award-card {
