@@ -202,7 +202,7 @@
     flex-direction: column;
   }
 
-  .get-app-wrapper {
+  .get-app-inner {
     min-height: 30rem;
   }
 
@@ -212,6 +212,8 @@
 
   .app-mob-btn {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer {
@@ -228,6 +230,11 @@
   .current-lang {
     padding: 0 1.2rem;
     height: 4rem;
+  }
+
+  .menu-button {
+    right: 2.4rem;
+    bottom: 2.4rem;
   }
 }
 
@@ -323,6 +330,25 @@
     gap: 1.2rem;
   }
 
+  .get-app-inner {
+    padding: 4.5rem 0;
+  }
+
+  .get-app-content {
+    width: 100%;
+    gap: 2.8rem;
+  }
+
+  .get-app-img {
+    position: static;
+    max-height: none;
+    height: auto;
+  }
+
+  .app-buttons {
+    width: 100%;
+  }
+
   .card-title {
     font-size: 1.2rem;
   }
@@ -352,7 +378,7 @@
 
   .product-card-content {
     padding: 2rem;
-    gap: 1.2rem ;
+    gap: 1.2rem;
   }
 
   .footer {
@@ -515,6 +541,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 1.7rem;
+    margin-top: 3px;
   }
 
   .breadcrumbs {
@@ -546,6 +574,18 @@
     font-size: 1.4rem;
   }
 
+  .get-app-inner {
+    padding: 3.2rem 0;
+  }
+
+  .get-app-heading {
+    font-size: 1.4rem;
+  }
+
+  .get-app-content {
+    gap: 2.4rem;
+  }
+
   .swiper-wrapper {
     padding-bottom: 2rem;
   }
@@ -555,9 +595,8 @@
     padding-top: 57%;
   }
 
-
   .footer-dropdown-toggle {
-    padding:  2.4rem 1.5rem;
+    padding: 2.4rem 1.5rem;
     padding-bottom: 2.4rem;
     margin: 0 -1.5rem;
   }
@@ -591,5 +630,22 @@
   .footer-contact-item h5,
   .footer-social-heading {
     font-size: 1.6rem;
+  }
+
+  .menu-button {
+    right: 1.5rem;
+    bottom: 1.5rem;
+  }
+
+  .menu-trigger-btn {
+    width: 4.8rem;
+    height: 4.8rem;
+    padding: 1.2rem;
+  }
+
+  .buttons-item {
+    width: 4.8rem;
+    height: 4.8rem;
+    padding: 1.2rem;
   }
 }

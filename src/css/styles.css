@@ -503,15 +503,7 @@
 /* Section Get-app */
 
 .get-app-wrapper {
-
   background-color: #fff;
-}
-
-.get-app-inner {
-  display: flex;
-  min-height: 37.4rem;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .get-app-content {
@@ -519,6 +511,12 @@
   flex-direction: column;
   gap: 1.6rem;
   align-items: flex-start;
+  width: 55%;
+}
+.get-app-inner {
+  position: relative;
+  min-height: 37.4rem;
+  padding: 3.2rem 0;
 }
 
 .get-app-heading {
@@ -568,9 +566,15 @@
   border-color: #e1e4e5;
 }
 
-.get-app-img img {
+.get-app-img {
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: 0;
+  bottom: 0;
   max-height: 90%;
   object-fit: contain;
+  object-position: 100% 100%;
 }
 
 /* --------------------------------------------------*/

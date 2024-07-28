@@ -71,10 +71,18 @@ footerDropdownToggles.forEach((item) => {
 });
 
 /////////////////////////////////////////////
-// const menuButton = document.querySelector('.menu-button');
-// menuButton.addEventListener('click', () => {
-//   menuButton.classList.toggle('active');
-// });
+// Menu Button
+const menuBtn = document.querySelector('.menu-button');
+const menuTriggerButton = document.querySelector('.menu-trigger-btn');
+
+menuTriggerButton.addEventListener('click', () => {
+  menuTriggerButton.classList.toggle('active');
+  if (menuTriggerButton.classList.contains('active')) {
+    menuBtn.classList.add('active');
+  } else {
+    menuBtn.classList.remove('active');
+  }
+});
 
 //////////////////
 // Swipper
@@ -128,53 +136,6 @@ function swiperSlider(sliderName, scrollbar, nextEl, prevEl) {
   });
 }
 
-
-//   spaceBetween: 30,
-//   slidesPerView: 3,
-//   speed: 800,
-//   grabCursor: !0,
-//   updateOnWindowResize: !0,
-//   watchOverflow: !0,
-//   scrollbar: {
-//     el: '.awards-slider-scrollbar',
-//     draggable: !0,
-//     hide: !1,
-//     dragSize: 300,
-//     snapOnRelease: !1,
-//   },
-//   navigation: {
-//     nextEl: '.awards-slider-next',
-//     prevEl: '.awards-slider-prev',
-//   },
-//   breakpoints: {
-//     0: {
-//       spaceBetween: 15,
-//       slidesPerView: 1.213,
-//       scrollbar: {
-//         dragSize: 137,
-//       },
-//     },
-//     600: {
-//       spaceBetween: 15,
-//       slidesPerView: 2,
-//     },
-//     1024: {
-//       slidesPerView: 2.523,
-//       spaceBetween: 30,
-//       scrollbar: {
-//         dragSize: 300,
-//       },
-//     },
-//     1440: {
-//       slidesPerView: 3,
-//       spaceBetween: 30,
-//       scrollbar: {
-//         dragSize: 300,
-//       },
-//     },
-//   },
-// });
-
 swiperSlider(
   'awards-swiper',
   'awards-slider-scrollbar',
@@ -193,53 +154,3 @@ swiperSlider(
   'products-slider-next',
   'products-slider-prev'
 );
-
-
-
-// const productsSwiper = new Swiper('.products-swiper', {
-//   spaceBetween: 30,
-//   slidesPerView: 3,
-//   speed: 800,
-//   grabCursor: !0,
-//   updateOnWindowResize: !0,
-//   watchOverflow: !0,
-//   scrollbar: {
-//     el: '.products-slider-scrollbar',
-//     draggable: !0,
-//     hide: !1,
-//     dragSize: 300,
-//     snapOnRelease: !1,
-//   },
-//   navigation: {
-//     nextEl: '.products-slider-next',
-//     prevEl: '.products-slider-prev',
-//   },
-//   breakpoints: {
-//     0: {
-//       spaceBetween: 15,
-//       slidesPerView: 1.213,
-//       scrollbar: {
-//         dragSize: 137,
-//       },
-//     },
-//     600: {
-//       spaceBetween: 15,
-//       slidesPerView: 2,
-//     },
-//     1024: {
-//       slidesPerView: 2.523,
-//       spaceBetween: 30,
-//       scrollbar: {
-//         dragSize: 300,
-//       },
-//     },
-//     1440: {
-//       slidesPerView: 3,
-//       spaceBetween: 30,
-//       scrollbar: {
-//         dragSize: 300,
-//       },
-//     },
-//   },
-// });
-
