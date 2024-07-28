@@ -41,6 +41,10 @@
     bottom: 4rem;
     right: 4rem;
   }
+
+  .footer-social-heading {
+    font-size: 1.6rem;
+  }
 }
 
 @media (max-width: 1122px) {
